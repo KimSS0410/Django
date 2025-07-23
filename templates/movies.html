@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>{{ movie.title }}</h1>
+    <p>감독: {{ movie.director }}</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 주석 처리
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for movie in movie_list %}
+        {% if forloop.counter <= 3 %}
+            {{ forloop.counter }}위: <a href="/movie/{{ forloop.counter0 }}">{{ movie.title }}</a><br>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>
+
+## 파이프(|) 이용해서 forloop.counter 에 연산하기
+
+# 덧셈
+{{ forloop.counter | add:5 }}
+
+# 뺄셈
+{{ forloop.counter | add:-3 }}
+-->

@@ -1,0 +1,9 @@
+[tool.poetry]
+name = "12_django"
+version = "0.1.0"
+description = ""
+authors = ["SeongSu <kimsszzz4@naver.com>"]
+package-mode = false
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+django = "^5.2.4"
